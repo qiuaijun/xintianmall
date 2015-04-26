@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface ProductService {
 	/**
-	 * 增加多类产品：比如增加樱桃、苹果、香蕉；
+	 * 产品入库：增加多个产品，但是需要是同一种类别的：比如增加樱桃、苹果、香蕉；
 	 * 
 	 * @param products
 	 * @throws ProductException
@@ -25,18 +25,22 @@ public interface ProductService {
 	public List<Product> getAllProducts() throws ProductException;
 
 	/**
-	 * 删除某类产品：比如苹果
+	 * 删除某种产品：比如苹果
 	 * 
 	 * @param productId
 	 * @throws ProductException
 	 */
-	public void removeProduct(String productId) throws ProductException;
-	
+	public void removeProduct(long productId) throws ProductException;
+
 	/**
-	 * 更新某类产品的属性，比如库存量
-	 * @param product
+	 * 售出指定数量的产品
+	 * 
+	 * @param id
+	 *            产品标识
+	 * @param count
+	 *            售出的数量
 	 * @throws ProductException
 	 */
-	public void updateProduct(Product product)throws ProductException;
+	public void soldProduct(long id, int count) throws ProductException;
 
 }
