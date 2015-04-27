@@ -22,7 +22,6 @@ public class Product {
 	private double price;
 	// 产品的产地
 	private String home;
-	
 
 	public long getId() {
 		return id;
