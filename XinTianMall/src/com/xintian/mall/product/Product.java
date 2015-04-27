@@ -22,6 +22,8 @@ public class Product {
 	private double price;
 	// 产品的产地
 	private String home;
+	// 产品状态:0-下架, 1-上架
+	private int status;
 
 	public long getId() {
 		return id;
@@ -77,6 +79,14 @@ public class Product {
 
 	public void setHome(String home) {
 		this.home = home;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
 	}
 
 }

@@ -25,6 +25,27 @@ public interface ProductService {
 	public List<Product> getAllProducts() throws ProductException;
 
 	/**
+	 * 根据状态获取产品列表
+	 * 
+	 * @param status
+	 *            产品状态:0-下架, 1-上架
+	 * @return 对应状态的产品列表
+	 * @throws ProductException
+	 */
+	public List<Product> getProductsByStatus(int status)
+			throws ProductException;
+
+	/**
+	 * 获取指定分类信息下的所有产品
+	 * 
+	 * @param categoryId
+	 * @return
+	 * @throws ProductException
+	 */
+	public List<Product> getProductsByCategory(int categoryId)
+			throws ProductException;
+
+	/**
 	 * 删除某种产品：比如苹果
 	 * 
 	 * @param productId
@@ -33,14 +54,15 @@ public interface ProductService {
 	public void removeProduct(long productId) throws ProductException;
 
 	/**
-	 * 售出指定数量的产品
+	 * 商品上架或者下架
 	 * 
 	 * @param id
 	 *            产品标识
 	 * @param count
-	 *            售出的数量
+	 *            产品状态:0-下架, 1-上架
 	 * @throws ProductException
 	 */
-	public void soldProduct(long id, int count) throws ProductException;
+	public void updateProductStatus(long id, int status)
+			throws ProductException;
 
 }
