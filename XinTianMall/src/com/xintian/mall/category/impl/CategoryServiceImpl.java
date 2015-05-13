@@ -44,7 +44,7 @@ public class CategoryServiceImpl implements CategoryService {
 	 * @see com.xintian.mall.category.CategoryService#getProductsByCategory()
 	 */
 	@Override
-	public List<Product> getProductsByCategory() {
+	public List<Product> getProductsByCategory(long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -11,7 +11,14 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-beans-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-context-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-context-support-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-core-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-jdbc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-web-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/chouaijun/Downloads/spring-framework-4.1.6.RELEASE/libs/spring-webmvc-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

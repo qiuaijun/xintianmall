@@ -38,8 +38,10 @@ public interface CategoryService {
 	/**
 	 * 获取某个类别下的所有产品信息
 	 * 
+	 * @param id
+	 *            分类ID 
 	 * @return 该类别下的所有产品信息
 	 */
-	public List<Product> getProductsByCategory();
+	public List<Product> getProductsByCategory(long id);
 
 }
